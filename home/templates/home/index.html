@@ -1,0 +1,621 @@
+{% extends 'layoutaia.html' %}
+{% load static %}
+{% block body %}
+<section class="hero-carousel">
+    <div class="container-xl">
+        <div class="post-carousel-lg">
+            <!-- post -->
+            <div class="post featured-post-xl">
+                <div class="details clearfix">
+                    <a href="#" class="category-badge lg">Академия ИИ</a>
+                    <h4 class="post-title"><a href="#">Откройте мир искусственного интеллекта</a></h4>
+                </div>
+                <a href="#">
+                    <div class="thumb rounded">
+                      <img class="inner data-bg-image" src="{% static 'img/banner.jpg' %}" alt="">
+                      
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<style>
+/* Основные стили */
+.thumb {
+position: relative;
+width: 100%;
+overflow: hidden;
+}
+
+.thumb img.inner {
+width: 100%;
+height: auto;
+display: block;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+.post.featured-post-xl {
+    /* Настройки для мобильных устройств */
+    margin: 0 auto;
+}
+
+
+.thumb {
+    margin: 0 auto;
+}
+
+.thumb img.inner {
+    width: 100%;
+    height: auto;
+    
+}
+}
+
+</style>
+
+
+<br><br>
+	  <!-- 
+        - #ABOUT
+      -->
+	  <section class="recommendations">
+		<div class="container">
+			<div class="header">
+				<figure class="speaker-info">
+					<img src="{% static 'img/about/an.jpg' %}" alt="Speaker" class="speaker-photo">
+					<div class="speaker-details">
+						<p class="speaker-position">Рекомендации заместителя <br>председателя Совета по ИИ:<br><b>«Как стать успешным ML-инженером»</b></p>
+						<h3 class="speaker-name">Ахлитдин Низамидинов</h3>
+					</div>
+				</figure>
+				
+				<ul class="nav nav-tabs" id="recommendationsTab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<a class="nav-link active" id="tab1" data-bs-toggle="tab" href="#content1" role="tab" aria-controls="content1" aria-selected="true">Овладение базовыми навыками</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="tab2" data-bs-toggle="tab" href="#content2" role="tab" aria-controls="content2" aria-selected="false">Применение на практике</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="tab3" data-bs-toggle="tab" href="#content3" role="tab" aria-controls="content3" aria-selected="false">Постоянное обновление знаний</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="tab4" data-bs-toggle="tab" href="#content4" role="tab" aria-controls="content4" aria-selected="false">Профессиональное обучение в Академии ИИ</a>
+					</li>
+				</ul>
+			</div>
+	
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="content1" role="tabpanel" aria-labelledby="tab1">
+					<div class="recommendation">
+						<p class="recommendation-text">Изучите основы математики, статистики, программирования на Python и алгоритмы машинного обучения,<br> чтобы заложить прочный фундамент.</p>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="content2" role="tabpanel" aria-labelledby="tab2">
+					<div class="recommendation">
+						<p class="recommendation-text">Начните с небольших проектов и участвуйте в конкурсах, Хакатонах, соревнованиях по машинному обучению,<br> чтобы укрепить свои навыки и набраться опыта.</p>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="content3" role="tabpanel" aria-labelledby="tab3">
+					<div class="recommendation">
+						<p class="recommendation-text">Регулярно изучайте новые методы и инструменты в области машинного обучения,<br> чтобы оставаться в курсе современных трендов.</p>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="content4" role="tabpanel" aria-labelledby="tab4">
+					<div class="recommendation">
+						<p class="recommendation-text">Пройдите курсы в Академии ИИ, чтобы получить глубокие знания и практический<br> опыт под руководством экспертов в сфере ИИ.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+
+
+
+	<section class="section courses" id="courses" style="margin-top: 50px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<div class="section-heading">
+						<h2>Наши курсы</h2>
+						<br>
+					</div>
+				</div>
+			</div>
+			<div class="row event_box">
+				<div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6">
+					<div class="events_item">
+						<div class="thumb">
+							<a href="basiccourse"><img src="{% static 'img/courses/course-01.jpg' %}" alt=""></a>
+						</div>
+						<div class="down-content">
+							<h4 style="margin-top: 0;">Basic Course</h4>
+							<p>Основы Python, статистики и классического машинного интеллекта.</p>
+							<p><i class="fas fa-clock"></i> 104 часов | <i class="fas fa-book"></i> 52 уроков</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6">
+					<div class="events_item">
+						<div class="thumb">
+							<a href="datanalytics"><img src="{% static 'img/courses/course-02.jpg' %}" alt=""></a>
+						</div>
+						<div class="down-content">
+							<h4 style="margin-top: 0;">Data Analytics</h4>
+							<p>Основы Python, статистики и классического машинного интеллекта.</p>
+							<p><i class="fas fa-clock"></i> 48 часов | <i class="fas fa-book"></i> 24 уроков</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6">
+					<div class="events_item">
+						<div class="thumb">
+							<a href="datascience"><img src="{% static 'img/courses/course-03.jpg' %}" alt=""></a>
+						</div>
+						<div class="down-content">
+							<h4 style="margin-top: 0;">Data Science</h4>
+							<p>Основы Python, статистики и классического машинного интеллекта.</p>
+							<p><i class="fas fa-clock"></i> 54 часов | <i class="fas fa-book"></i> 27 уроков</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="center-button">
+				<button class="categoryshe lg">
+					<ul class="navbarchik">
+						<li class="nav-item">
+							<a class="nav-link" href="courses">Все курсы</a>
+						</li>
+					</ul>
+				</button>
+			</div>
+		</div>
+	</section>
+		
+	  
+	
+
+	  <div class="section about-us" id="faq">
+		<div class="container">
+		  <div class="row">
+			<div class="col-lg-6 offset-lg-1">
+			  <div class="accordion" id="accordionExample">
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="headingOne">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					<small>Какие курсы предлагает Академия ИИ?</small>
+					</button>
+				  </h2>
+				  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<strong>Академия ИИ</strong> предлагает несколько курсов, включая Базовый курс, Курс по дата-аналитике, Курс по науке о данных, ML Ops и Продвинутый курс по искусственному интеллекту. Каждый курс разработан с учётом различных уровней подготовки и профессиональных целей.
+					</div>
+				  </div>
+				</div>
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="headingTwo">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					  <small>Какие знания необходимы для <br> поступления на курсы?</small>
+					</button>
+				  </h2>
+				  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						Для поступления на Базовый курс достаточно общего представления о программировании. Для более продвинутых курсов, таких как Курс по науке о данных или ML Ops, желательно иметь базовые знания в области статистики, программирования на Python и понимание основ машинного обучения.
+					</div>
+				  </div>
+				</div>
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="headingThree">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					  <small>Как проходят занятия в Академии ИИ?</small>
+					</button>
+				  </h2>
+				  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						Занятия в <strong>Академии ИИ</strong> проходят в онлайн-формате. Студенты получают доступ к лекциям, практическим заданиям и дополнительным материалам. Также предусмотрены регулярные вебинары и консультации с преподавателями для обсуждения трудных вопросов и получения обратной связи.
+					</div>
+				  </div>
+				</div>
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="headingFour">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					  <small>Как получить сертификат по окончании курса?</small>
+					</button>
+				  </h2>
+				  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						Для получения сертификата необходимо успешно выполнить все задания и пройти финальное тестирование. Сертификаты выдаются только тем студентам, которые показали высокие результаты и продемонстрировали глубокое понимание изучаемого материала.
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="col-lg-5 align-self-center">
+			  <div class="section-heading">
+				<h6>О нас</h6>
+				<h2><small>Что делает нас <br> лучшей академией?</small></h2>
+				<p>Академия ИИ – это передовое образовательное учреждение, специализирующееся на обучении искусственному интеллекту и анализу данных. Мы предлагаем широкий спектр курсов, от базовых до продвинутых, которые охватывают такие темы, как программирование на .....</p>
+				<div class="main-button">
+				  <a href="about">Читать дальше</a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+
+	  <div class="section events" id="events" style="margin-top: 100px;">
+		<div class="container">
+		  <div class="row">
+			<div class="col-lg-12 text-center">
+			  <div class="section-heading">
+				<h2>Предстоящие курсы</h2>
+			  </div>
+			</div>
+			<div class="col-lg-12 col-md-6">
+			  <div class="item">
+				<div class="row">
+				  <div class="col-lg-3">
+					<div class="image">
+					  <img src="{% static 'img/scholar/event-01.jpg' %}" alt="">
+					</div>
+				  </div>
+				  <div class="col-lg-9">
+					<ul>
+					  <li>
+						<span class="category">Академия ИИ</span>
+						<h4>Basic Course</h4>
+					  </li>
+					  <li>
+						<span>Дата:</span>
+						<h6>02/09/2024</h6>
+					  </li>
+					  <li>
+						<span>Длительность:</span>
+						<h6>104 Часа</h6>
+					  </li>
+					  <li>
+						<span>Цена:</span>
+						<h6>Бесплатно</h6>
+					  </li>
+					</ul>
+					<a href="basiccourse"><i class="fa fa-angle-right"></i></a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="col-lg-12 col-md-6">
+			  <div class="item">
+				<div class="row">
+				  <div class="col-lg-3">
+					<div class="image">
+					  <img src="{% static 'img/scholar/event-02.jpg' %}" alt="">
+					</div>
+				  </div>
+				  <div class="col-lg-9">
+					<ul>
+					  <li>
+						<span class="category">Академия ИИ</span>
+						<h4>Data Analytics</h4>
+					  </li>
+					  <li>
+						<span>Дата:</span>
+						<h6>01/10/2024</h6>
+					  </li>
+					  <li>
+						<span>Длительность:</span>
+						<h6>48 Часов</h6>
+					  </li>
+					  <li>
+						<span>Цена:</span>
+						<h6>Бесплатно</h6>
+					  </li>
+					</ul>
+					<a href="datanalytics"><i class="fa fa-angle-right"></i></a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="col-lg-12 col-md-6">
+			  <div class="item">
+				<div class="row">
+				  <div class="col-lg-3">
+					<div class="image">
+					  <img src="{% static 'img/scholar/event-03.jpg' %}" alt="">
+					</div>
+				  </div>
+				  <div class="col-lg-9">
+					<ul>
+					  <li>
+						<span class="category">Академия ИИ</span>
+						<h4>Data Science</h4>
+					  </li>
+					  <li>
+						<span>Дата:</span>
+						<h6>12/08/2024</h6>
+					  </li>
+					  <li>
+						<span>Длительность:</span>
+						<h6>54 Часов</h6>
+					  </li>
+					  <li>
+						<span>Цена:</span>
+						<h6>Бесплатно</h6>
+					  </li>
+					</ul>
+					<a href="datascience"><i class="fa fa-angle-right"></i></a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+    <!-- TESTIMONIAL
+    ================================================== -->
+    <section id="testimonial" class="py-8 py-md-11 pb-xl-12" style="margin-top: 0;">
+        <div class="container position-relative">
+            <div class="text-center mb-md-10 mb-5 text">
+				<div class="courses" id="courses" aria-label="Our Courses" style="margin-top: 70px;">
+					<div class="container">
+					  <h2 class="section-title">Студенты о нас</h2>
+					</div>
+				</div>
+            </div>
+
+            <div class="tab-content text-center mb-md-11 mb-8 w-xl-75 mx-auto" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="position-relative">
+						<div class="card-float top-0 left-0 mt-n6 ms-n11 text-dark-10 iconns">
+							<!-- Icon -->
+							<svg width="36" height="23" viewBox="0 0 36 23" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.5 23L15.5 -4.76837e-06H10L2.98023e-08 23H9.5ZM29.5 23L35.5 -4.76837e-06H30L20 23H29.5Z" fill="currentColor"/>
+							</svg>
+						</div>
+<style>
+	/* По умолчанию скрываем элемент на мобильных устройствах и планшетах */
+.iconns {
+    display: none;
+}
+
+/* Показ элемента только на ноутбуках и больших экранах */
+@media (min-width: 992px) {
+    .iconns {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: -1.5rem; /* Настройте по необходимости */
+        margin-left: -2rem; /* Настройте по необходимости */
+    }
+}
+
+/* Добавляем отступы для мобильных устройств и планшетов */
+@media (max-width: 991px) {
+    .iconns {
+        display: none;
+    }
+}
+
+</style>											
+                        <p class="mb-0 text text-gray-800 fw-normal mt-5 mb-5">Я прошел данный курс с большим энтузиазмом. Да, поначалу было трудно, но это вызвало интерес и добавило мне мотивации продолжать. Благодарен Академии за предоставленные возможности и знания, которые я использовал на практике. Благодаря полученным знаниям и опыту, я создал несколько собственных проектов, которые принесли мне не только успех, но и известность. Этот курс кардинально изменил мое восприятие мира и новых технологий. Изначально я планировал поступить на экономический факультет, но, разобравшись и поняв, как же интересно быть специалистом в сфере ИИ, я решил поступить на факультет Big Data & AI. Спасибо Академии и лаборатории <a href="https://zypl.ai/ru">zypl.ai</a>.</p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="position-relative">
+                        <div class="card-float top-0 left-0 mt-n6 ms-n11 text-dark-10 iconns">
+                            <!-- Icon -->
+                            <svg width="36" height="23" viewBox="0 0 36 23" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 23L15.5 -4.76837e-06H10L2.98023e-08 23H9.5ZM29.5 23L35.5 -4.76837e-06H30L20 23H29.5Z" fill="currentColor"/>
+                            </svg>
+
+                        </div>
+                        <p class="mb-0 text text-gray-800 fw-normal mt-5 mb-5">Курс "Basic Course" - отличная отправная точка для освоения основ работы с базами данных!  Материал изложен доступно и понятно, практика с реальными кейсами позволила закрепить полученные знания. 
+                            Теперь с уверенностью могу двигаться дальше и уже записалась на второй курс "Data Analytics", чтобы углубить свои навыки.  
+                            Спасибо за качественный курс!</p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="position-relative">
+                        <div class="card-float top-0 left-0 mt-n6 ms-n11 text-dark-10 iconns">
+                            <!-- Icon -->
+                            <svg width="36" height="23" viewBox="0 0 36 23" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 23L15.5 -4.76837e-06H10L2.98023e-08 23H9.5ZM29.5 23L35.5 -4.76837e-06H30L20 23H29.5Z" fill="currentColor"/>
+                            </svg>
+
+                        </div>
+                        <p class="mb-0 text text-gray-800 fw-normal mt-5 mb-5">Я очень рад, что решил пройти этот курс. Он предоставил мне не только глубокие знания в области искусственного интеллекта, но и практические навыки, которые я могу применять в своей работе. Я особенно ценю доступный и структурированный материал, который позволил мне глубже понять сложные аспекты машинного обучения и анализа данных. Преподаватели были профессиональными и отзывчивыми, всегда готовы помочь и объяснить трудные моменты. Этот курс действительно изменил мое представление о технологиях будущего и подготовил меня к новым вызовам в карьере. Благодаря этому курсу я чувствую себя готовым к применению своих знаний на практике и с уверенностью смотрю в будущее в сфере ИИ.</p>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="nav row row-cols-md-2 row-cols-lg-3" id="pills-tab" role="tablist">
+                <li class="nav-item col-md mb-4 mb-lg-0" role="presentation">
+                    <a class="nav-link p-0 active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                        <!-- Card -->
+                        <div class="card border p-2 lift rounded-pill">
+                            <div class="row gx-0 align-items-center">
+                                <div class="col-auto">
+                                    <div class="avatar avatar-custom">
+                                        <img src="{% static 'img/avatars/avatar-4.jpg' %}" alt="..." class="avatar-img rounded-circle img-fluid">
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card-body p-0 ms-5">
+                                        <h5 class="mb-0">Расулов Азиз</h5>
+                                        <span class="text-gray-800">Студент</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item col-md mb-4 mb-lg-0" role="presentation">
+                    <a class="nav-link p-0" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                        <!-- Card -->
+                        <div class="card border p-2 lift rounded-pill">
+                            <div class="row gx-0 align-items-center">
+                                <div class="col-auto">
+                                    <div class="avatar avatar-custom">
+                                        <img src="{% static 'img/avatars/avatar-1.jpg' %}" alt="..." class="avatar-img rounded-circle img-fluid">
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card-body p-0 ms-5">
+                                        <h5 class="mb-0">Норова Румайза</h5>
+                                        <span class="text-gray-800">Ученица школы</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item col-md mb-4 mb-lg-0" role="presentation">
+                    <a class="nav-link p-0" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
+                        <!-- Card -->
+                        <div class="card border p-2 lift rounded-pill">
+                            <div class="row gx-0 align-items-center">
+                                <div class="col-auto">
+                                    <div class="avatar avatar-custom">
+                                        <img src="{% static 'img/avatars/avatar-5.jpg' %}" alt="..." class="avatar-img rounded-circle img-fluid">
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card-body p-0 ms-5">
+                                        <h5 class="mb-0">Мероч Буриев</h5>
+                                        <span class="text-gray-800">Дата Аналитик</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="py-2 pt-md-5 pb-md-10" >
+        <div class="container" style="margin-bottom: 25px;">
+            <div class="row row-cols-3 row-cols-md-5 text-center w-xl-80 mx-xl-auto justify-content-center align-items-center" data-aos="fade-up">
+                <div class="col-md mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="50">
+                    <div class="mw-100p mx-auto">
+                        <a href="https://zypl.ai/ru">
+                            <img src="{% static 'img/partners/zypl.png' %}" alt="zypl" width="75%">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mw-100p mx-auto">
+                        <!-- Image -->
+                       <a href="https://www.tajrupt.org/">
+                        <div class="mw-100p mx-auto">
+                            <img src="{% static 'img/partners/tajrupt.png' %}" alt="tajrupt" width="75%">
+                        </div>
+                       </a>
+                    </div>
+                </div>
+                <div class="col-md mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="150">
+                    <div class="mw-100p mx-auto">
+                        <!-- Image -->
+                        <a href="https://aic.tj/en">
+                            <div class="mw-100p mx-auto">
+                                <img src="{% static 'img/partners/aic.png' %}" alt="aic" width="75%">
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-md mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="mw-100p mx-auto">
+                        <!-- Image -->
+                        <div class="mw-100p mx-auto">
+                            <img src="{% static 'img/partners/aia.png' %}" alt="aia" width="75%">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="250">
+                    <div class="mw-100p mx-auto">
+                        <!-- Image -->
+                        <a href="https://samizoda.netlify.app/">
+                            <div class="mw-100p mx-auto">
+                                <img src="{% static 'img/partners/samX.png' %}" alt="tajrupt" width="75%">
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<section class="section courses" id="courses" style="margin-top: 50px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<div class="section-heading">
+						<h2>Последние блоги</h2>
+						<br>
+					</div>
+				</div>
+			</div>
+			<div class="row event_box">
+				<div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6">
+					<div class="events_item">
+						<div class="thumb">
+							<a href="#"><img src="{% static 'img/courses/course-01.jpg' %}" alt=""></a>
+						</div>
+						<div class="down-content">
+							<h4 style="margin-top: 0;">Участие в ICT - WEEK Dushanbe 2024</h4>
+							<p><a href="blog">Читать далее</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6">
+					<div class="events_item">
+						<div class="thumb">
+							<a href="#"><img src="{% static 'img/courses/course-02.jpg' %}" alt=""></a>
+						</div>
+						<div class="down-content">
+							<h4 style="margin-top: 0;">Участие в ICT - WEEK Dushanbe 2024</h4>
+							<p><a href="blog">Читать далее</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6">
+					<div class="events_item">
+						<div class="thumb">
+							<a href="#"><img src="{% static 'img/courses/course-03.jpg' %}" alt=""></a>
+						</div>
+						<div class="down-content">
+							<h4 style="margin-top: 0;">Участие в ICT - WEEK Dushanbe 2024</h4>
+							<p><a href="blog">Читать далее</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="center-button">
+					<button class="categoryshe lg">
+						<ul class="navbarchik">
+							<li class="nav-item">
+								<a class="nav-link" href="blog">Все новости</a>
+							</li>
+						</ul>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+			
+
+
+
+{% endblock %}
